@@ -2,15 +2,19 @@
 
 int main() 
 {
+	int a = 0;
 	int num = 0;
-	printf("Enter a three-digit number: ");
+	printf("Enter a number: ");
 	scanf("%d", &num);
 
-	
-	int a = num / 100;
-	int b = num / 10 % 10;
-	int c = num % 10;
+	printf("result is: ");
 
-	printf("Result is: %d%d%d \n", c, b, a);
+	while(num > 0){
+		a = num % 10;
+		printf("%d", a);
+		num /= 10;
+	}
+	printf("\n");
+
 	return 0;
 }
