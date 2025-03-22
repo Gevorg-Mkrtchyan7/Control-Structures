@@ -15,9 +15,10 @@ int main()
 	printf("Error \n");
 
 	while(a <= b){
-	if(a % 5 == 0)
-	printf("%d \n", a);
-	a++;
+	if(a % 5 == 0){
+		printf("%d \n", a);
+	}
+		a++;
 	}
        return 0;	
 }
