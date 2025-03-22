@@ -2,30 +2,21 @@
 
 int main()
 {
-	printf("\n");
-	for(int i = 0; i <= 100; i++){
-		if(i % 3 == 0)
-		printf("Fizz ");
-	}
-	printf("\n \n");
+	int num = 0;
+	printf("Enter the number: ");
+	scanf("%d", &num);
 
-	for(int a = 0; a <= 100; a++){
-		if(a % 5 == 0)
-		printf("Buzz ");
-	}
-	printf("\n \n");
-
-	for(int b = 0; b <= 100; b++){
-		if(b % 3 == 0 ||  b % 5 == 0)
-		printf("FizzBuzz");
-	}
-	printf("\n \n");
-
-	for(int c = 0; c <= 100; c++){
-		if(c % 3 != 0 || c % 5 != 0)
-		printf("%d ", c);
-	}
-	printf("\n \n");
+	for(int i = 0; i <= 100; i++) {
+		if(i % 3 == 0 && i % 5 == 0){
+			printf("FizzBuzz \n");
+		}else if(i % 3 == 0){
+			printf("Fizz \n");
+		}else if(i % 5 == 0){
+			printf("Buzz \n");
+		}else{
+			printf("%d \n", i);
+		}
+	} 
 
 	return 0;
 }
